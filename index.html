@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <title>Horoskop</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 
 </head>
 
@@ -31,8 +31,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text">Födelsedatum </span>
                     </div>
-                    <input type="number" name="personnummer" id="personnummer" aria-label="First name" class="form-control">
-                </div>
+                    <input type="number" name="inputPersonnummer" id="personnummer" aria-label="First name" class="form-control"> </div>
             </div>
             <div class="col"></div>
             <div class="col"></div>
@@ -44,28 +43,30 @@
         <div class="container">
             <div class="row justify-content-center">
 
-                <div class="col" id="spara-mitt-horoskop-div">
-                    <button type="button" class="btn btn-success">spara mitt horoskop</button>
+                <div class="col">
+                    <button type="button" name="spara-Mitt-Horoskop" onclick="sparaMittHoroskop();" class="btn btn-success">spara mitt horoskop</button>
                 </div>
 
-                <div class="col" id="uppdatera-mitt-horoskop-div">
-                    <button type="button" class="btn btn-info">uppdatera mitt horoskop</button>
 
-                </div>
-
-                <div class="col" id="radera-mitt-horoskop-div">
-
-                    <button type="button" class="btn btn-danger">radera mitt horoskop</button>
+                <div class="col">
+                    <button type="button" name="uppdatera-mitt-horoskop" onclick="uppdateramitthoroskop();" class="btn btn-info">uppdatera mitt horoskop</button>
 
                 </div>
 
+                <div class="col">
+
+                    <button type="button" name="readera-Mitt-Horoskop" onclick="raderaMittHoroskop();" class="btn btn-danger">radera mitt horoskop</button>
+                </div>
             </div>
+        </div>
+
+        <div id="minhoroskop">
 
 
         </div>
-
-
     </div>
+
+
 
 </body>
 
